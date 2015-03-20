@@ -1,0 +1,10 @@
+Starbucks sells Coffee.
+Starbucks sells Donuts.
+Starbucks sells ?.
+? has_store_location HarvardSquare.
+Lucy ? ?.
+Joe smith plays_sport ?.
+Lucy plays_sport ?.
+? PLAYS_SPORT      ?.
+? sells COFFEE. 
+? ? HarvardCoop.

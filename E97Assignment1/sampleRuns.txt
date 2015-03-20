@@ -1,0 +1,310 @@
+C:\test\E97Assignment1>java cscie97/asn1/test/TestDriver
+
+Please specify N_Triple file and query file
+
+
+
+-------------------------------------------------------------------
+
+
+C:\test\E97Assignment1>java cscie97/asn1/test/TestDriver inputTriples.txt sampleQuery.tx
+
+
+Starbucks sells Coffee.
+Starbucks sells Coffee.
+
+
+Starbucks sells Donuts.
+<null>
+
+
+Starbucks sells ?.
+Starbucks sells Coffee.
+Starbucks sells Cake.
+
+
+? has_store_location HarvardSquare.
+HarvardCoop has_store_location HarvardSquare.
+Starbucks has_store_location HarvardSquare.
+
+
+Lucy ? ?.
+Lucy works_at HarvardCoop.
+Lucy likes_to_eat Cake.
+Lucy lives_near HarvardSquare.
+Lucy plays_instrument Guitar.
+Lucy has_friend Joe.
+Lucy plays_sport Soccer.
+Lucy works_with Joe.
+Lucy works_at Starbucks.
+
+
+Joe plays_sport ?.
+Joe plays_sport Hockey.
+Joe plays_sport Soccer.
+Joe plays_sport Cricket.
+
+
+Lucy plays_sport ?.
+Lucy plays_sport Soccer.
+
+
+? PLAYS_SPORT      ?.
+Lucy plays_sport Soccer.
+Joe plays_sport Hockey.
+Joe plays_sport Soccer.
+Joe plays_sport Cricket.
+
+
+? sells COFFEE.
+HarvardCoop sells Coffee.
+Starbucks sells Coffee.
+
+
+? ? HarvardCoop.
+Lucy works_at HarvardCoop.
+
+-----------------------------------------------------------------------
+
+C:\test\E97Assignment1>java cscie97/asn1/test/TestDriver inputTriples1.txt sampleQuery.txt
+cscie97.asn1.knowledge.engine.ImportException: Import Excetion: line 11 of file inputTriples1.txt in line :[Lucy works_with Joe smith.]
+        at cscie97.asn1.knowledge.engine.Importer.importTripleFile(Importer.java:50)
+        at cscie97.asn1.test.TestDriver.main(TestDriver.java:44)
+cscie97.asn1.knowledge.engine.ImportException: Import Excetion: line 11 of file inputTriples1.txt in line :[Lucy works_with Joe smith.]
+
+C:\test\E97Assignment1>
+
+-----------------------------------------------------------------------
+
+C:\test\E97Assignment1>java cscie97/asn1/test/TestDriver inputTriples.txt sampleQuery1.txt
+
+
+Starbucks sells Coffee.
+Starbucks sells Coffee.
+
+
+Starbucks sells Donuts.
+<null>
+
+
+Starbucks sells ?.
+Starbucks sells Coffee.
+Starbucks sells Cake.
+
+
+? has_store_location HarvardSquare.
+HarvardCoop has_store_location HarvardSquare.
+Starbucks has_store_location HarvardSquare.
+
+
+Lucy ? ?.
+Lucy works_at HarvardCoop.
+Lucy likes_to_eat Cake.
+Lucy lives_near HarvardSquare.
+Lucy plays_instrument Guitar.
+Lucy has_friend Joe.
+Lucy plays_sport Soccer.
+Lucy works_with Joe.
+Lucy works_at Starbucks.
+cscie97.asn1.knowledge.engine.QueryEngineException: Parsing Query Excetion: line 6 of file sampleQuery1.txt in line :[Joe smith plays_sport ?.]
+        at cscie97.asn1.knowledge.engine.QueryEngine.executeQuery(QueryEngine.java:47)
+        at cscie97.asn1.knowledge.engine.QueryEngine.executeQueryFile(QueryEngine.java:88)
+        at cscie97.asn1.test.TestDriver.main(TestDriver.java:46)
+cscie97.asn1.knowledge.engine.QueryEngineException: Parsing Query Excetion: line 6 of file sampleQuery1.txt in line :[Joe smith plays_sport ?.]
+
+------------------------------------------------------------------------
+
+
+C:\test\E97Assignment1>java cscie97/asn1/test/TestDriver inputTriples.txt sampleQuery3.txt
+
+
+Starbucks sells         Coffee.
+Starbucks sells Coffee.
+
+
+Starbucks sells       Donuts.
+<null>
+
+
+Starbucks       sells ?.
+Starbucks sells Cake.
+Starbucks sells Coffee.
+
+
+? has_store_location        HarvardSquare.
+Starbucks has_store_location HarvardSquare.
+HarvardCoop has_store_location HarvardSquare.
+
+
+Lucy ? ?.
+Lucy likes_to_eat Cake.
+Lucy lives_near HarvardSquare.
+Lucy has_friend Joe.
+Lucy works_at Starbucks.
+Lucy works_at HarvardCoop.
+Lucy plays_sport Soccer.
+Lucy plays_instrument Guitar.
+Lucy works_with Joe.
+
+
+Joe plays_sport                 ?.
+Joe plays_sport Cricket.
+Joe plays_sport Hockey.
+Joe plays_sport Soccer.
+
+
+Lucy plays_sport        ?.
+Lucy plays_sport Soccer.
+
+
+        ? PLAYS_SPORT      ?.
+Lucy plays_sport Soccer.
+Joe plays_sport Cricket.
+Joe plays_sport Hockey.
+Joe plays_sport Soccer.
+
+
+?               sells COFFEE.
+HarvardCoop sells Coffee.
+Starbucks sells Coffee.
+
+
+? ? HarvardCoop.
+Lucy works_at HarvardCoop.
+
+------------------------------------------------------------------------
+
+
+C:\test\E97Assignment1>java cscie97/asn1/test/TestDriver inputTriples.txt sampleQuery4.txt
+
+
+STARBUCKS SELLS COFFEE.
+Starbucks sells Coffee.
+
+
+STARBUCKS SELLS DONUTS.
+<null>
+
+
+STARBUCKS SELLS ?.
+Starbucks sells Cake.
+Starbucks sells Coffee.
+
+
+? HAS_STORE_LOCATION HARVARDSQUARE.
+Starbucks has_store_location HarvardSquare.
+HarvardCoop has_store_location HarvardSquare.
+
+
+LUCY ? ?.
+Lucy likes_to_eat Cake.
+Lucy lives_near HarvardSquare.
+Lucy has_friend Joe.
+Lucy works_at Starbucks.
+Lucy works_at HarvardCoop.
+Lucy plays_sport Soccer.
+Lucy plays_instrument Guitar.
+Lucy works_with Joe.
+
+
+JOE PLAYS_SPORT ?.
+Joe plays_sport Cricket.
+Joe plays_sport Hockey.
+Joe plays_sport Soccer.
+
+
+LUCY PLAYS_SPORT ?.
+Lucy plays_sport Soccer.
+
+
+? PLAYS_SPORT      ?.
+Lucy plays_sport Soccer.
+Joe plays_sport Cricket.
+Joe plays_sport Hockey.
+Joe plays_sport Soccer.
+
+
+? SELLS COFFEE.
+HarvardCoop sells Coffee.
+Starbucks sells Coffee.
+
+
+? ? HARVARDCOOP.
+Lucy works_at HarvardCoop.
+
+---------------------------------------------------------------------
+
+C:\test\E97Assignment1>java cscie97/asn1/test/TestDriver inputTriples2.txt sampleQuery.txt
+cscie97.asn1.knowledge.engine.ImportException: Import Excetion: line 11 of file inputTriples2.txt in line :[? works_with Joe.]
+        at cscie97.asn1.knowledge.engine.Importer.importTripleFile(Importer.java:58)
+        at cscie97.asn1.test.TestDriver.main(TestDriver.java:44)
+cscie97.asn1.knowledge.engine.ImportException: Import Excetion: line 11 of file inputTriples2.txt in line :[? works_with Joe.]
+
+C:\test\E97Assignment1>
+
+----------------------------------------------------------------------
+
+C:\test\E97Assignment1>java cscie97/asn1/test/TestDriver inputTriples3.txt sampleQuery.txt
+
+
+Starbucks sells Coffee.
+<null>
+
+
+Starbucks sells Donuts.
+<null>
+
+
+Starbucks sells ?.
+<null>
+
+
+? has_store_location HarvardSquare.
+<null>
+
+
+Lucy ? ?.
+LUCY has_friend Joe.
+LUCY WORKS_AT Starbucks.
+LUCY plays_sport SOCCER.
+LUCY plays_instrument Guitar.
+LUCY WORKS_WITH Joe.
+
+
+Joe plays_sport ?.
+Joe PLAYS_SPORT CRICKET.
+Joe plays_sport Hockey.
+Joe PLAYS_SPORT SOCCER.
+
+
+Lucy plays_sport ?.
+LUCY plays_sport SOCCER.
+
+
+? PLAYS_SPORT      ?.
+LUCY plays_sport SOCCER.
+Joe PLAYS_SPORT CRICKET.
+Joe plays_sport Hockey.
+Joe PLAYS_SPORT SOCCER.
+
+
+? sells COFFEE.
+<null>
+
+
+? ? HarvardCoop.
+<null>
+
+-----------------------------------------------------------------------
+
+C:\test\E97Assignment1>java cscie97/asn1/test/TestDriver input.txt sampleQuery.txt
+java.io.FileNotFoundException: input.txt (The system cannot find the file specified)
+        at java.io.FileInputStream.open(Native Method)
+        at java.io.FileInputStream.<init>(Unknown Source)
+        at java.io.FileInputStream.<init>(Unknown Source)
+        at java.io.FileReader.<init>(Unknown Source)
+        at cscie97.asn1.knowledge.engine.Importer.importTripleFile(Importer.java:37)
+        at cscie97.asn1.test.TestDriver.main(TestDriver.java:44)
+java.io.FileNotFoundException: input.txt (The system cannot find the file specified)
+
+-----------------------------------------------------------------------

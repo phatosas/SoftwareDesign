@@ -1,0 +1,16 @@
+Joe plays_sport Hockey.
+
+
+JOE PLAYS_SPORT SOCCER.
+JOE PLAYS_SPORT CRICKET.
+
+Joe works_at Starbucks.
+Joe has_friend Lucy
+
+
+LUCY WORKS_WITH JOE.
+LUCY WORKS_AT STARBUCKS.
+
+Lucy plays_instrument Guitar.
+Lucy plays_sport Soccer.
+Lucy has_friend Joe.

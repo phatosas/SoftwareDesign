@@ -1,0 +1,15 @@
+java cscie97/asn1/test/TestDriver
+
+java cscie97/asn1/test/TestDriver inputTriples.txt sampleQuery.txt
+
+java cscie97/asn1/test/TestDriver inputTriples1.txt sampleQuery.txt
+
+java cscie97/asn1/test/TestDriver inputTriples.txt sampleQuery1.txt
+
+java cscie97/asn1/test/TestDriver inputTriples.txt sampleQuery3.txt
+
+java cscie97/asn1/test/TestDriver inputTriples.txt sampleQuery4.txt
+
+java cscie97/asn1/test/TestDriver inputTriples2.txt sampleQuery.txt
+
+java cscie97/asn1/test/TestDriver inputTriples3.txt sampleQuery.txt
